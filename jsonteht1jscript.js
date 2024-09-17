@@ -1,4 +1,4 @@
-fetch('https://run.mocky.io/v3/7f8dcc16-e0b5-4e6a-b28b-41fd9fbdf6d4')
+fetch('https://run.mocky.io/v3/08ed6c9e-fb6c-4870-855a-a6eb9238a73c')
 
 // Muunnetaan vastaus JSON muotoon
 
