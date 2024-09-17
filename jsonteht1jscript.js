@@ -2,6 +2,8 @@ fetch('https://run.mocky.io/v3/93d4a974-2461-4ed5-923b-b51ce7251edb')
 
 // Muunnetaan vastaus JSON muotoon
 
+    .then(function(response) {
+    return response.json()
 })
 
 // Käsitellään muunnettu (eli JSON muotoinen) vastaus
@@ -20,6 +22,8 @@ document.getElementById("vastaus").innerHTML =
 
 // Jos tuli jokin virhe
 
-.catch(function (error) { document.getElementById("vastaus").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
+.catch(function (error) { 
+    document.getElementById("vastaus").innerHTML = 
+    "<p>Tietoa ei pystytä hakemaan</p>";
 
 })
