@@ -65,7 +65,7 @@ fetch('https://run.mocky.io/v3/ea76bd01-464c-47e1-b599-f8f09896c23b')
 
         // teksti-muuttujan sisällön tulostus
 
-        document.getElementById("vastaus1").innerHTML = teksti;
+        document.getElementById("vastaus2").innerHTML = teksti;
 
 
     }
