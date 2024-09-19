@@ -7,30 +7,27 @@
 </head>
 <body>
 
-    <h1>JavaScript Test Page</h1>
+    <h1>JSON testi</h1>
 
-    <div id="vastaus">
+
 <script>
-fetch(https://run.mocky.io/v3/cf01bec9-b41f-4700-9468-cdf610044295)
+fetch('https://run.mocky.io/v3/cf01bec9-b41f-4700-9468-cdf610044295')
 
     // Muunnetaan vastaus JSON muotoon
     
-        .then(function(response) {
+    .then(function(response) {
         return response.json()
     })
     
     // Käsitellään muunnettu (eli JSON muotoinen) vastaus
     
     .then(function (responseJson) {
+        document.getElementById("vastaus").innerHTML =
+        "<p>Jatketaan harjoitusta</p>";
+        console.log(responseJson);
     
-    // Testataan onnistuuko json-luku
-    
-    // jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu
-    
-    document.getElementById("vastaus").innerHTML =
-    
-    "<p>Jatketaan harjoitusta</p>";
-    
+        // Testataan onnistuuko json-luku
+        // jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu    
     })
     
     // Jos tuli jokin virhe
@@ -38,12 +35,13 @@ fetch(https://run.mocky.io/v3/cf01bec9-b41f-4700-9468-cdf610044295)
     .catch(function (error) { 
         document.getElementById("vastaus").innerHTML = 
         "<p>Tietoa ei pystytä hakemaan</p>";
+        console.log(error);
     
-    })</script>
+    })
+    </script>
     
+<div id="vastaus"></div>
 
 
-
-</div>
 </body>
 </html>
