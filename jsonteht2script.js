@@ -28,7 +28,7 @@ fetch('https://run.mocky.io/v3/01201723-ebd0-4676-9f24-6b9e712526f5')
     
     })
 
-    function nayta(data) {
+    function kerro(data) {
         var tiedot = "";
 
         tiedot = "<h1>" + data.kurssin_nimi + "</h1>"
